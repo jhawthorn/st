@@ -445,7 +445,7 @@ static void xloadcols(void);
 static int xsetcolorname(int, const char *);
 static int xgeommasktogravity(int);
 static int xloadfont(Font *, FcPattern *);
-static void xloadfonts(char *, double);
+static void xloadfonts(const char *, double);
 static void xsettitle(char *);
 static void xresettitle(void);
 static void xsetpointermotion(int);
@@ -544,7 +544,7 @@ static char *opt_name  = NULL;
 static char *opt_title = NULL;
 static int oldbutton   = 3; /* button event on startup: 3 = release */
 
-static char *usedfont = NULL;
+static const char *usedfont = NULL;
 static double usedfontsize = 0;
 static double defaultfontsize = 0;
 
@@ -3444,7 +3444,7 @@ xloadfont(Font *f, FcPattern *pattern)
 }
 
 void
-xloadfonts(char *fontstr, double fontsize)
+xloadfonts(const char *fontstr, double fontsize)
 {
 	FcPattern *pattern;
 	double fontval;
