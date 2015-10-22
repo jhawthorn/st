@@ -154,14 +154,14 @@ static unsigned int defaultunderline = 7;
  */
 static MouseShortcut mshortcuts[] = {
 	/* button               mask            string */
-	{ Button4,              XK_ANY_MOD,     "\031" },
-	{ Button5,              XK_ANY_MOD,     "\005" },
+	{ Button4,              ShiftMask,      "\031" },
+	{ Button5,              ShiftMask,      "\005" },
 };
 
 static MouseKey mkeys[] = {
 	/* button               mask            function        argument */
-	{ Button4,              XK_ANY_MOD,      kscrollup,      { .i = 1 } },
-	{ Button5,              XK_ANY_MOD,      kscrolldown,    { .i = 1 } },
+	{ Button4,              XK_NO_MOD,      kscrollup,      { .i = 1 } },
+	{ Button5,              XK_NO_MOD,      kscrolldown,    { .i = 1 } },
 };
 
 /* Internal keyboard shortcuts. */
