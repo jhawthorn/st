@@ -158,6 +158,12 @@ static MouseShortcut mshortcuts[] = {
 	{ Button5,              XK_ANY_MOD,     "\005" },
 };
 
+static MouseShortcut mshortcuts[] = {
+	/* button               mask            function        argument */
+	{ Button4,              XK_ANY_MOD,      kscrollup,      { .i = 1 } },
+	{ Button5,              XK_ANY_MOD,      kscrolldown,    { .i = 1 } },
+};
+
 /* Internal keyboard shortcuts. */
 #define MODKEY Mod1Mask
 
