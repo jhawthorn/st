@@ -7,7 +7,7 @@
  */
 //static char font[] = "Liberation Mono:pixelsize=12:antialias=true:autohint=true";
 //static const char font[] = "-*-terminus-medium-r-normal-*-14-*-*-*-*-*-*-*";
-static const char font[] = "Terminus:pixelsize=14:antialias=false";
+static const char font[] = "xos4 Terminus:pixelsize=14:antialias=false";
 static int borderpx = 2;
 #define histsize 2000
 
